@@ -17,3 +17,9 @@ Hmanager-app/src/main/java/com/nmb/managerapp/service/ProductService.java,5\6\5
 Omanager-app/src/main/java/com/nmb/managerapp/service/DefaultProductService.java,1\d\1d4b3dc5d785c0187efabf4aaa5253a84688977a
 
 Omanager-app/src/main/java/com/nmb/managerapp/controller/ProductsController.java,0\0\0087c491401754fbf8d0e4fcfc25586e9e281a0e
+†
+Vmanager-app/src/main/java/com/nmb/managerapp/controller/payload/NewProductPayload.java,f\b\fb6ef5a2b9f26951461cced0568df4a93a22ef5e
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+y
+Imanager-app/src/test/java/com/nmb/managerapp/ManagerApplicationTests.java,c\7\c79aa51f5f1cb5c792a957479a83ee52c116664a

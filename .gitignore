@@ -1,7 +1,31 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
+<<<<<<< HEAD
+=======
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+>>>>>>> c4f5ef8 (SC24EP01)
+=======
+>>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 .apt_generated
 .classpath
 .factorypath
@@ -10,6 +34,10 @@
 .springBeans
 .sts4-cache
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 
 # Created by https://www.gitignore.io/api/git,java,maven,eclipse,windows
 
@@ -166,6 +194,11 @@ $RECYCLE.BIN/
 *.iml
 *.ipr
 
+<<<<<<< HEAD
+=======
+>>>>>>> c4f5ef8 (SC24EP01)
+=======
+>>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -179,6 +212,10 @@ build/
 ### VS Code ###
 .vscode/
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 ### Some additional ignores (sort later)
 *.DS_Store
 *.sw?
@@ -199,3 +236,10 @@ README.html
 *.iml
 .idea
 .exercism
+<<<<<<< HEAD
+=======
+### Mac OS ###
+.DS_Store
+>>>>>>> c4f5ef8 (SC24EP01)
+=======
+>>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
