@@ -1,23 +1,15 @@
 package com.nmb.managerapp.controller;
 
-<<<<<<< HEAD
 import com.nmb.managerapp.controller.payload.NewProductPayload;
 import com.nmb.managerapp.entity.Product;
-=======
->>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 import com.nmb.managerapp.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-<<<<<<< HEAD
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-=======
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
->>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 
 @Controller
 @RequiredArgsConstructor
@@ -25,17 +17,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ProductsController {
     private final ProductService productService;
 
-<<<<<<< HEAD
     @GetMapping("list")
-=======
-    @RequestMapping(value = "list", method = RequestMethod.GET)
->>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
     public String getProductsList(Model model) {
         model.addAttribute("products", productService.findAllProducts());
         return "catalogue/products/list";
     }
 
-<<<<<<< HEAD
     @GetMapping("create")
     public String getNewProductPage() {
         return "catalogue/products/new_product";
@@ -52,7 +39,4 @@ public class ProductsController {
         model.addAttribute("product", productService.findProduct(productId).orElseThrow());
         return "catalogue/products/product";
     }
-
-=======
->>>>>>> 41258dda3ced627aca7ab3447c713be34f161109
 }
