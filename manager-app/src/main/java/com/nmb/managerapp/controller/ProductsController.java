@@ -14,11 +14,6 @@ import org.springframework.web.bind.annotation.*;
 public class ProductsController {
     private final ProductService productService;
 
-    @ModelAttribute("product")
-    public Product product(@PathVariable("productId") int productId) {
-        return productService.findProduct(productId).orElseThrow();
-    }
-
     @GetMapping("list")
     public String getProductsList(Model model) {
         model.addAttribute("products", productService.findAllProducts());
@@ -34,17 +29,5 @@ public class ProductsController {
     public String createProduct(NewProductPayload payload) {
         Product product = productService.createProduct(payload.title(), payload.details());
         return "redirect:/catalogue/products/%d".formatted(product.getId());
-    }
-
-    @GetMapping("{productId:\\d+}")
-    public String getProduct(@PathVariable("productId") int productId, Model model) {
-        model.addAttribute("product", productService.findProduct(productId).orElseThrow());
-        return "catalogue/products/product";
-    }
-
-    @GetMapping("{productId}:\\d+")
-    public String getProductEditPage(@PathVariable("productId") int productId, Model model) {
-        model.addAttribute("product", productService.findProduct(productId).orElseThrow());
-        return "catalogue/products/edit";
     }
 }

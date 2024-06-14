@@ -23,3 +23,7 @@ Vmanager-app/src/main/java/com/nmb/managerapp/controller/payload/NewProductPaylo
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 y
 Imanager-app/src/test/java/com/nmb/managerapp/ManagerApplicationTests.java,c\7\c79aa51f5f1cb5c792a957479a83ee52c116664a
+~
+Nmanager-app/src/main/java/com/nmb/managerapp/controller/ProductController.java,9\f\9f892b9c77d8279bfd5a3db77733f6191a71cce9
+‰
+Ymanager-app/src/main/java/com/nmb/managerapp/controller/payload/UpdateProductPayload.java,0\d\0d7f58d046cfc2234600b97fd0e0eeb3f8d5a7a3
