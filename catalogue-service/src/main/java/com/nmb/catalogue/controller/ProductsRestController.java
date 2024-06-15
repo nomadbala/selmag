@@ -24,7 +24,7 @@ public class ProductsRestController {
     @PostMapping
     public Product createProduct(@Valid @RequestBody NewProductPayload payload, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-
+            return null;
         } else {
             productService.createProduct(payload.title(), payload.details());
         }
