@@ -31,13 +31,12 @@ public class DefaultProductService implements ProductService {
 
     @Override
     public void updateProduct(Integer id, String title, String details) {
-        productRepository.findById(id)
-                .ifPresentOrElse(product -> {
-                    product.setTitle(title);
-                    product.setDetails(details);
-                }, () -> {
-                    throw new NoSuchElementException("Product not found");
-                });
+        productRepository.findById(id).ifPresentOrElse(product -> {
+            product.setTitle(title);
+            product.setDetails(details);
+        }, () -> {
+            throw new NoSuchElementException("Product not found");
+        });
     }
 
     @Override

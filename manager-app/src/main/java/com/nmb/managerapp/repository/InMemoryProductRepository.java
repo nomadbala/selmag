@@ -4,10 +4,6 @@ import com.nmb.managerapp.entity.Product;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.stream.IntStream;
 
 @Repository
 public class InMemoryProductRepository implements ProductRepository {
@@ -20,19 +16,16 @@ public class InMemoryProductRepository implements ProductRepository {
 
     @Override
     public Product save(Product product) {
-        product.setId(products.stream().max(Comparator.comparingInt(Product::getId))
-                .map(Product::getId)
-                .orElse(0) + 1);
+        product.setId(products.stream().max(Comparator.comparingInt(Product::getId)).map(Product::getId).orElse(0) + 1);
 
         products.add(product);
+
         return product;
     }
 
     @Override
     public Optional<Product> findById(Integer productId) {
-        return products.stream()
-                .filter(product -> Objects.equals(productId, product.getId()))
-                .findFirst();
+        return products.stream().filter(product -> Objects.equals(productId, product.getId())).findFirst();
     }
 
     @Override

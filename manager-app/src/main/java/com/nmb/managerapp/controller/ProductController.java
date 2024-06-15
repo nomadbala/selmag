@@ -47,8 +47,7 @@ public class ProductController {
             model.addAttribute("payload", payload);
             model.addAttribute("errors", bindingResult.getAllErrors().stream().map(ObjectError::getDefaultMessage).toList());
             return "catalogue/products/new_product";
-        }
-        else {
+        } else {
             productService.updateProduct(product.getId(), payload.title(), payload.details());
             return "redirect:/catalogue/products/%d.".formatted(product.getId());
         }
