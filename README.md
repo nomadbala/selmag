@@ -1,5 +1,3 @@
-# Разработка проектов со Spring (2024)
-
 ## Профили Spring
 
 - `standalone` - для запуска модулей `admin-server`, `catalogue-service`, `feedback-service`, `customer-app` и `manager-app` без Spring Cloud Eureka, Spring Cloud Config, Docker и Kubernetes.
