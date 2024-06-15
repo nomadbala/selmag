@@ -1,6 +1,6 @@
-package com.nmb.managerapp.service;
+package com.nmb.catalogue.service;
 
-import com.nmb.managerapp.entity.Product;
+import com.nmb.catalogue.entity.Product;
 
 import java.util.List;
 import java.util.Optional;

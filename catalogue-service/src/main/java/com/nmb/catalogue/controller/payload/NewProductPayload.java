@@ -1,4 +1,4 @@
-package com.nmb.managerapp.controller.payload;
+package com.nmb.catalogue.controller.payload;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

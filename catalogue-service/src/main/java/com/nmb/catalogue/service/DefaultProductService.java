@@ -1,7 +1,7 @@
-package com.nmb.managerapp.service;
+package com.nmb.catalogue.service;
 
-import com.nmb.managerapp.entity.Product;
-import com.nmb.managerapp.repository.ProductRepository;
+import com.nmb.catalogue.entity.Product;
+import com.nmb.catalogue.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

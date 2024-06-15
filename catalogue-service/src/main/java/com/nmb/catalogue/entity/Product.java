@@ -1,4 +1,4 @@
-package com.nmb.managerapp.entity;
+package com.nmb.catalogue.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

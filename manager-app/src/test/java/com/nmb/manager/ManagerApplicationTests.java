@@ -1,4 +1,4 @@
-package com.nmb.managerapp;
+package com.nmb.manager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

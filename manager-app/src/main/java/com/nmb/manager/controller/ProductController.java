@@ -1,8 +1,8 @@
-package com.nmb.managerapp.controller;
+package com.nmb.manager.controller;
 
-import com.nmb.managerapp.controller.payload.UpdateProductPayload;
-import com.nmb.managerapp.entity.Product;
-import com.nmb.managerapp.service.ProductService;
+import com.nmb.manager.controller.payload.UpdateProductPayload;
+import com.nmb.manager.entity.Product;
+import com.nmb.manager.service.ProductService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
