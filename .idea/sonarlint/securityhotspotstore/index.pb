@@ -29,3 +29,13 @@ Xcatalogue-service/src/main/java/com/nmb/catalogue/controller/ProductsRestContro
 [catalogue-service/src/main/java/com/nmb/catalogue/controller/payload/NewProductPayload.java,d\b\db55df915d4004fb685d76bfab914f7da66bace7
 ‡
 Wcatalogue-service/src/main/java/com/nmb/catalogue/controller/ProductRestController.java,d\e\de43980210808dcd692cda63744842cc692ba3c1
+{
+Kmanager-app/src/main/java/com/nmb/manager/controller/ProductController.java,a\a\aa63df61860ef217cb09a78d42872dc0391effa7
+Œ
+\catalogue-service/src/main/java/com/nmb/catalogue/controller/BadRequestControllerAdvice.java,a\f\af1933cf401e308e1d4b68862b8a109ae966982f
+x
+Hmanager-app/src/main/java/com/nmb/manager/client/ProductsRestClient.java,5\a\5a50454c36cc52c9ec3adf83c53a881c223ef6b1
+|
+Lmanager-app/src/main/java/com/nmb/manager/controller/ProductsController.java,a\f\af4c6afd44fc50711702078eddd8cc0f3cb2efba
+‚
+Rmanager-app/src/main/java/com/nmb/manager/client/RestClientProductsRestClient.java,e\4\e441302bce100f0db96f228db0f3b259cced5dfe

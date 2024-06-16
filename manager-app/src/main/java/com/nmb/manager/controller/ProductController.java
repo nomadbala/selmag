@@ -1,8 +1,8 @@
 package com.nmb.manager.controller;
 
+import com.nmb.manager.client.ProductsRestClient;
 import com.nmb.manager.controller.payload.UpdateProductPayload;
 import com.nmb.manager.entity.Product;
-import com.nmb.manager.service.ProductService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -21,13 +21,14 @@ import java.util.NoSuchElementException;
 @RequiredArgsConstructor
 @RequestMapping("catalogue/products/{productId:\\d+}")
 public class ProductController {
-    private final ProductService productService;
+
+    private final ProductsRestClient productsRestClient;
 
     private final MessageSource messageSource;
 
     @ModelAttribute("product")
     public Product product(@PathVariable("productId") int productId) {
-        return productService.findProduct(productId)
+        return productsRestClient.findProduct(productId)
                 .orElseThrow(() -> new NoSuchElementException("catalogue.errors.product.not_found"));
     }
 
@@ -48,14 +49,14 @@ public class ProductController {
             model.addAttribute("errors", bindingResult.getAllErrors().stream().map(ObjectError::getDefaultMessage).toList());
             return "catalogue/products/new_product";
         } else {
-            productService.updateProduct(product.getId(), payload.title(), payload.details());
-            return "redirect:/catalogue/products/%d.".formatted(product.getId());
+            productsRestClient.updateProduct(product.id(), payload.title(), payload.details());
+            return "redirect:/catalogue/products/%d.".formatted(product.id());
         }
     }
 
     @PostMapping("delete")
     public String deleteProduct(@ModelAttribute("product") Product product) {
-        productService.deleteProduct(product.getId());
+        productsRestClient.deleteProduct(product.id());
         return "redirect:/catalogue/products/list";
     }
 
