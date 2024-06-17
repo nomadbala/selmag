@@ -5,7 +5,7 @@
     <title>Новый товар &ndash; Сельмаг</title>
 </head>
 <body>
-<a data-th-href="@{catalogue/products/list}">&larr; К списку товаров</a>
+<a data-th-href="@{/catalogue/products/list}">&larr; К списку товаров</a>
 <h1>Новый товар</h1>
 <div data-th-if="${errors}">
     <h2>Допущены ошибки</h2>
@@ -13,7 +13,7 @@
         <li data-th-each="error: ${errors}" data-th-text="${error}"></li>
     </ul>
 </div>
-<form method="post" data-th-action="@{catalogue/products/create}">
+<form method="post" data-th-action="@{/catalogue/products/create}">
     <label>
         Название: <br>
         <input type="text" name="title" data-th-value="${payload?.title}">

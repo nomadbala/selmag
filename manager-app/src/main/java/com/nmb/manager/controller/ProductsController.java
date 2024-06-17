@@ -1,9 +1,9 @@
 package com.nmb.manager.controller;
 
+import com.nmb.manager.client.BadRequestException;
 import com.nmb.manager.client.ProductsRestClient;
 import com.nmb.manager.controller.payload.NewProductPayload;
 import com.nmb.manager.entity.Product;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,14 +31,14 @@ public class ProductsController {
     }
 
     @PostMapping("create")
-    public String createProduct(@Valid NewProductPayload payload, BindingResult bindingResult, Model model) {
-        if (bindingResult.hasErrors()) {
-            model.addAttribute("payload", payload);
-            model.addAttribute("errors",bindingResult.getAllErrors().stream().map(ObjectError::getDefaultMessage).toList());
-            return "catalogue/products/new_product";
-        } else {
+    public String createProduct(NewProductPayload payload, Model model) {
+        try {
             Product product = productsRestClient.createProduct(payload.title(), payload.details());
             return "redirect:/catalogue/products/%d".formatted(product.id());
+        } catch (BadRequestException e) {
+            model.addAttribute("payload", payload);
+            model.addAttribute("errors", e.getErrors());
+            return "catalogue/products/new_product";
         }
     }
 }

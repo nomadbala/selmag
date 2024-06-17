@@ -39,3 +39,9 @@ Hmanager-app/src/main/java/com/nmb/manager/client/ProductsRestClient.java,5\a\5
 Lmanager-app/src/main/java/com/nmb/manager/controller/ProductsController.java,a\f\af4c6afd44fc50711702078eddd8cc0f3cb2efba
 ‚
 Rmanager-app/src/main/java/com/nmb/manager/client/RestClientProductsRestClient.java,e\4\e441302bce100f0db96f228db0f3b259cced5dfe
+y
+Imanager-app/src/main/java/com/nmb/manager/client/BadRequestException.java,0\6\066ee7088cd78bb4486d0616c646340b7936cc86
+q
+Amanager-app/src/main/java/com/nmb/manager/config/ClientBeans.java,5\8\5847bdeb1c766ac1aa5285f16dd3beef8a7d9cf7
+ƒ
+Smanager-app/src/main/java/com/nmb/manager/controller/payload/NewProductPayload.java,0\7\0701634ee84a4900aa7d987e60c59b14c757543f
