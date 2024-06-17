@@ -31,7 +31,7 @@ docker run --name selmag-keycloak -p 8082:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLO
 Запуск в Docker:
 
 ```shell
-docker run --name catalogue-db -p 5432:5432 -e POSTGRES_USER=catalogue -e POSTGRES_PASSWORD=catalogue -e POSTGRES_DB=catalogue postgres:16
+docker run --name catalogue-db -p 5433:5432 -e POSTGRES_USER=catalogue -e POSTGRES_PASSWORD=catalogue -e POSTGRES_DB=catalogue postgres:16
 ```
 
 ### MongoDB
@@ -125,7 +125,7 @@ In the project it is used as a database of the catalog module.
 Running in Docker:
 
 ```shell
-docker run --name catalogue-db -p 5432:5432 -e POSTGRES_USER=catalogue -e POSTGRES_PASSWORD=catalogue -e POSTGRES_DB=catalogue postgres:16
+docker run --name catalogue-db -p 5433:5432 -e POSTGRES_USER=catalogue -e POSTGRES_PASSWORD=catalogue -e POSTGRES_DB=catalogue postgres:16
 ```
 
 ### MongoDB

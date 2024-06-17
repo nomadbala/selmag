@@ -1,11 +1,11 @@
 
-n
-java:S2259G"LA "NullPointerException" could be thrown; "getProperties()" can return null.(¬ϋρμψÿÿÿÿ8›έ¶―‚2
-m
-java:S2259G"KA "NullPointerException" could be thrown; "problemDetail" is nullable here.(¬ϋρμψÿÿÿÿ8«έ¶―‚2
-m
-java:S2259,"KA "NullPointerException" could be thrown; "problemDetail" is nullable here.(¬ϋρμψÿÿÿÿ8«έ¶―‚2
-n
-java:S2259,"LA "NullPointerException" could be thrown; "getProperties()" can return null.(¬ϋρμψÿÿÿÿ8«έ¶―‚2
+”
+java:S2259,"LA "NullPointerException" could be thrown; "getProperties()" can return null.(¬ϋρμψÿÿÿÿ8«έ¶―‚2J$279fc115-0d47-44de-bb78-81b02137d305
+“
+java:S2259G"KA "NullPointerException" could be thrown; "problemDetail" is nullable here.(¬ϋρμψÿÿÿÿ8«έ¶―‚2J$1b3c4330-d0cc-4b47-9df0-d9408eae9ad9
+”
+java:S2259G"LA "NullPointerException" could be thrown; "getProperties()" can return null.(¬ϋρμψÿÿÿÿ8›έ¶―‚2J$82c9db1f-ff22-4d59-8185-ab3f5bc08ff7
+“
+java:S2259,"KA "NullPointerException" could be thrown; "problemDetail" is nullable here.(¬ϋρμψÿÿÿÿ8«έ¶―‚2J$09a2c790-86cf-4bf4-a0f3-17adbc5ae95f
 §
-java:S11924"dDefine a constant instead of duplicating this literal "/catalogue-api/products/{productId}" 3 times.(ρΌ8Υ΄«‚2J$8bd34e58-2ece-4116-b81c-ab0eae00e121
+java:S11924"dDefine a constant instead of duplicating this literal "/catalogue-api/products/{productId}" 3 times.(ρΌ8Υ΄«‚2J$203b3bb4-21f8-4c5a-8145-05ae3de8b729

@@ -1,2 +1,21 @@
 server:
   port: 8081
+
+logging:
+  level:
+    sql: info
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/catalogue
+    username: catalogue
+    password: catalogue
+  flyway:
+    schemas:
+      - public
+      - catalogue
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true

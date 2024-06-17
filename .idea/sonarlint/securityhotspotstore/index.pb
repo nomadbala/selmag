@@ -19,8 +19,6 @@ Mcatalogue-service/src/main/java/com/nmb/catalogue/service/ProductService.java,
 Tcatalogue-service/src/main/java/com/nmb/catalogue/service/DefaultProductService.java,0\8\08c45ccf793546942c842dd13949f9e658809f8a
 u
 Ecatalogue-service/src/main/java/com/nmb/catalogue/entity/Product.java,c\3\c3e7f8c351958b84606d48fc12d38570feb80d90
-‹
-[catalogue-service/src/main/java/com/nmb/catalogue/repository/InMemoryProductRepository.java,b\6\b673c1d37e27af518096e235950770ff665570c1
 m
 =manager-app/src/main/java/com/nmb/manager/entity/Product.java,9\7\97a061a707b671e045fd2499bdbeffe1d745df51
 ˆ
