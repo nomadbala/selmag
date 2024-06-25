@@ -6,8 +6,13 @@ logging:
     sql: info
 
 spring:
+  security:
+    user:
+      roles: SERVICE
+      name: catalogue_service_user
+      password: password
   datasource:
-    url: jdbc:postgresql://localhost:5433/catalogue
+    url: jdbc:postgresql://localhost:5432/catalogue
     username: catalogue
     password: catalogue
   flyway:

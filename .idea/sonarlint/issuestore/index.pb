@@ -43,3 +43,15 @@ q
 Amanager-app/src/main/java/com/nmb/manager/config/ClientBeans.java,5\8\5847bdeb1c766ac1aa5285f16dd3beef8a7d9cf7
 ƒ
 Smanager-app/src/main/java/com/nmb/manager/controller/payload/NewProductPayload.java,0\7\0701634ee84a4900aa7d987e60c59b14c757543f
+{
+Kcatalogue-service/src/main/java/com/nmb/catalogue/config/SecurityBeans.java,9\b\9be1f853a6753ebff0b5473b72da61d019d81a44
+o
+?manager-app/src/main/java/com/nmb/manager/entity/Authority.java,a\2\a27c0f076ba35e9d81fed40b5d25c5c8e86ec44c
+p
+@manager-app/src/main/java/com/nmb/manager/entity/SelmagUser.java,3\a\3aaa17d32e427689f8308243637654290f02fcf6
+~
+Nmanager-app/src/main/java/com/nmb/manager/repository/SelmagUserRepository.java,0\c\0ce0dec04f4d3bf054e7f5cd5040cfd5afe51031
+
+Omanager-app/src/main/java/com/nmb/manager/security/SelmagUserDetailService.java,b\b\bbcaf5cb916783f978198127a5c90ded542418a0
+€
+Pmanager-app/src/main/java/com/nmb/manager/security/SelmagUserDetailsService.java,8\a\8a998534f385ef1d1ea7b9aafd33f8d1ede8c46e
