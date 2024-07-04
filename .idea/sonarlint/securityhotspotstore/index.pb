@@ -51,7 +51,7 @@ p
 @manager-app/src/main/java/com/nmb/manager/entity/SelmagUser.java,3\a\3aaa17d32e427689f8308243637654290f02fcf6
 ~
 Nmanager-app/src/main/java/com/nmb/manager/repository/SelmagUserRepository.java,0\c\0ce0dec04f4d3bf054e7f5cd5040cfd5afe51031
-
-Omanager-app/src/main/java/com/nmb/manager/security/SelmagUserDetailService.java,b\b\bbcaf5cb916783f978198127a5c90ded542418a0
 €
 Pmanager-app/src/main/java/com/nmb/manager/security/SelmagUserDetailsService.java,8\a\8a998534f385ef1d1ea7b9aafd33f8d1ede8c46e
+q
+Amanager-app/src/main/java/com/nmb/manager/ManagerApplication.java,2\6\2627d4cc2933dbe49ed9b8c038592e8a96fdf3f6

@@ -10,7 +10,7 @@ spring:
     user:
       roles: SERVICE
       name: catalogue_service_user
-      password: password
+      password: '{noop}password'
   datasource:
     url: jdbc:postgresql://localhost:5432/catalogue
     username: catalogue
