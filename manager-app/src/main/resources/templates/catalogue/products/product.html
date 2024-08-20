@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${product.getTitle()}]] &ndash; Сельмаг</title>
+</head>
+<body>
+<a data-th-href="@{/catalogue/products/list}">&larr; К списку товаров</a>
+<h1 data-th-text="${product.getTitle()}"></h1>
+
+<ul>
+    <li><strong>ID</strong>: <span data-th-text="${product.getId()}"></span></li>
+    <li><strong>Название</strong>: <span data-th-text="${product.getTitle()}"></span></li>
+    <li><strong>Описание</strong>: <span data-th-text="${product.getDetails()}"></span></li>
+</ul>
+</body>
+</html>

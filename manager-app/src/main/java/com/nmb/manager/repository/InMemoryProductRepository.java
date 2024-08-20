@@ -3,11 +3,39 @@ package com.nmb.manager.repository;
 import com.nmb.manager.entity.Product;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 
 @Repository
 public class InMemoryProductRepository implements ProductRepository {
     private List<Product> products = Collections.synchronizedList(new LinkedList<>());
+
+    @Override
+    public List<Product> findAll() {
+        return Collections.unmodifiableList(products);
+    }
+
+    @Override
+    public Product save(Product product) {
+        product.setId(
+                products
+                        .stream()
+                        .max(Comparator.comparingLong(Product::getId))
+                        .map(Product::getId)
+                        .orElse(0L) + 1
+        );
+
+        products.add(product);
+
+        return product;
+    }
+
+    @Override
+    public Optional<Product> findById(Long productId) {
+        return products
+                .stream()
+                .filter(product -> Objects.equals(productId, product.getId()))
+                .findFirst();
+    }
 }
