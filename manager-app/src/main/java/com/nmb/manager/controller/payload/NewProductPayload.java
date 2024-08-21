@@ -1,4 +1,4 @@
-package com.nmb.manager.payload;
+package com.nmb.manager.controller.payload;
 
 public record NewProductPayload(String title, String details) {
 }

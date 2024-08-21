@@ -29,3 +29,7 @@ S
 Q.idea/sonarlint/securityhotspotstore/0/a/0af687d7db47070e7c271008f34dbc6315b11868,f\1\f11fede699ffccec2013b2c03c8069694325f771
 x
 Hmanager-app/src/main/java/com/nmb/manager/payload/NewProductPayload.java,d\d\dd94b7a71b4194a06fd56e4b3d6a36ab2cd7cceb
+{
+Kmanager-app/src/main/java/com/nmb/manager/controller/ProductController.java,a\a\aa63df61860ef217cb09a78d42872dc0391effa7
+†
+Vmanager-app/src/main/java/com/nmb/manager/controller/payload/UpdateProductPayload.java,3\3\3373b3cb50b966561de40318e2acd008a90c6ff0

@@ -11,4 +11,6 @@ public interface ProductService {
     Product createProduct(String title, String details);
 
     Optional<Product> findProduct(long productId);
+
+    void updateProduct(Long id, String title, String details);
 }
