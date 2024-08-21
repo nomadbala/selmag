@@ -17,10 +17,10 @@
     </thead>
     <tbody>
     <tr data-th-each="product: ${products}">
-        <td data-th-text="${product.getId()}"></td>
+        <td data-th-text="${product.id}"></td>
         <td>
-            <a data-th-href="@{/catalogue/products/{productId}(productId=${product.getId()})}"
-               data-th-text="${product.getTitle()}"></a>
+            <a data-th-href="@{/catalogue/products/{productId}(productId=${product.id})}"
+               data-th-text="${product.title}"></a>
         </td>
     </tr>
     </tbody>

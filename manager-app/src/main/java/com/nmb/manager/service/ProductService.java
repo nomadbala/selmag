@@ -13,4 +13,6 @@ public interface ProductService {
     Optional<Product> findProduct(long productId);
 
     void updateProduct(Long id, String title, String details);
+
+    void deleteProduct(Long id);
 }
