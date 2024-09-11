@@ -1,8 +1,8 @@
 package com.nmb.manager.controller;
 
+import com.nmb.manager.client.ProductsRestClient;
 import com.nmb.manager.controller.payload.NewProductPayload;
 import com.nmb.manager.entity.Product;
-import com.nmb.manager.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 @RequestMapping("catalogue/products")
 public class ProductsController {
-    private final ProductService productService;
+    private final ProductsRestClient productsRestClient;
 
     @GetMapping("list")
     public String getProductsList(Model model) {
-        model.addAttribute("products", productService.findAllProducts());
+        model.addAttribute("products", productsRestClient.findAllProducts());
         return "catalogue/products/list";
     }
 
@@ -38,8 +38,8 @@ public class ProductsController {
             return "catalogue/products/new_product";
         }
         else {
-            Product product = productService.createProduct(payload.title(), payload.details());
-            return "redirect:/catalogue/products/%d".formatted(product.getId());
+            Product product = productsRestClient.createProduct(payload.title(), payload.details());
+            return "redirect:/catalogue/products/%d".formatted(product.id());
         }
     }
 }
